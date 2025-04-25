@@ -41,7 +41,7 @@ x25fs is a FUSE (Filesystem in Userspace) implementation that provides an encryp
 
 ### Downloading Build
 
-1. **Download x25fs:** Go to [release]() page to download x25fs.
+1. **Download x25fs:** Go to [release](https://github.com/nthnn/x25fs/releases) page to download x25fs.
 
 2. **Install using `dpkg`:** Install x25fs using `dpkg` as shown below:
     ```bash
