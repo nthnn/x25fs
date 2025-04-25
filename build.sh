@@ -37,5 +37,5 @@ chmod 0755 "${PKG_DIR}${INSTALL_PATH}/${BIN_NAME}"
 echo "Building Debian package..."
 dpkg-deb --build "${PKG_DIR}" "${DIST_DIR}/${PACKAGE_NAME}-${VERSION}.deb"
 
-rm -rf "${PKG_DIR}"
+rm -rf "${PKG_DIR}" "${DIST_DIR}/{BIN_NAME}"
 echo "Created ${DIST_DIR}/${PACKAGE_NAME}-${VERSION}.deb"
