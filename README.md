@@ -39,6 +39,15 @@ x25fs is a FUSE (Filesystem in Userspace) implementation that provides an encryp
     go mod tidy
     ```
 
+### Downloading Build
+
+1. **Download x25fs:** Go to [release]() page to download x25fs.
+
+2. **Install using `dpkg`:** Install x25fs using `dpkg` as shown below:
+    ```bash
+    sudo dpkg -i x25fs-1.0.0.deb
+    ```
+
 ## Usage
 
 ```
