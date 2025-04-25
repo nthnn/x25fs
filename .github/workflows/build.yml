@@ -1,0 +1,28 @@
+name: x25fs Build
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        run: sudo apt install golang-go
+
+      - name: Go version
+        run: go version
+
+      - name: Build the project
+        run: |
+          chmod +x build.sh
+          ./build.sh
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: x25fs
+          path: dist/
+          retention-days: 1
